@@ -1,8 +1,7 @@
-import javax.swing.JOptionPane;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
-        int opc = 0;
+        int opc;
         Gestionamiento_Cliente gest_Cliente = new Gestionamiento_Cliente();
         Scanner scanner = new Scanner(System.in);
     
@@ -20,10 +19,14 @@ public class App {
 
 
             System.out.println("ingrese la opcion que desea realizar");
-            opc = scanner.nextInt();
+            opc = scanner.nextInt(); //opcion que desea realizar el usuario
             
     
             switch(opc){
+
+                case 0: 
+                    System.out.println("Saliendo de la aplicacion.......");
+                    return;
     
                 case 1: gest_Cliente.insertarCliente(); 
                     break;
@@ -49,16 +52,12 @@ public class App {
                 case 8: gest_Cliente.solicitar_Cdt();
                     break;
 
-                
-    
-    
+                default:
+                    System.out.println("Opcion invalida dentro de la aplicacion.......");
+                    break;
     
             }
     
-    
-    
-    
-            }while(opc != 0);
-        }
-
+        }while(opc != 0);
+    }
 }
