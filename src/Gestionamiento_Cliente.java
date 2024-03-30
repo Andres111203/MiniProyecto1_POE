@@ -96,7 +96,7 @@ public class Gestionamiento_Cliente
         if (ClienteAActualizar != null)
         {
             System.out.println("Ingrese el nuevo monto: ");
-            Double NuevoAhorro = entrad.nextDouble();
+            Double NuevoAhorro = entrada.nextDouble();
             entrada.nextLine();
 
             ClienteAActualizar.setDinero_Ahorrado(NuevoAhorro);
