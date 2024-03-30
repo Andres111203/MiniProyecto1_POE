@@ -11,6 +11,9 @@ public class App {
             System.out.println("1. Ingredar Clientes");
             System.out.println("2. Insertar dinero ahorrado");
             System.out.println("3. Actualizar dinero ahorrado");
+            System.out.println("4. Eliminar dinero ahorrado");
+            System.out.println("5. Buscar cliente por nombre y ver ahorro");
+            System.out.println("6. Listar todos los clientes");
             System.out.println("0. Salir del programa");
 
             System.out.println("\nSeleccione una oppcion: ");
@@ -25,6 +28,16 @@ public class App {
                     break;
                 
                 case 3: gest_Cliente.actualizarDineroAhorrado();
+                    break;
+
+                case 4: gest_Cliente.eliminarDineroAhorrado();
+                    break;
+    
+                case 5: gest_Cliente.buscarCliente_por_Nombre();
+                    break;
+
+                case 6: gest_Cliente.listar_clientes();
+                    
             }
         }
         while(opc != 0);

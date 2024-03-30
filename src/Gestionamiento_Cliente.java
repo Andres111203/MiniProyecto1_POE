@@ -127,11 +127,54 @@ public class Gestionamiento_Cliente
         if (ClienteAhorroBorrrar != null )
         {
             cliente1.setDinero_Ahorrado(0);
-            System.out.println("El dinero ahorrado ha sido eliminado");
+            System.out.println("El dinero ahorado ha sido eliminado");
         }
         else
         {
             System.out.println("El cliente no ha sido encontrado :c");
+        }
+        
+    }
+
+    public void buscarCliente_por_Nombre()
+    {
+
+        System.out.println("ingrese el nombre del cliente  que desea buscar: ");
+        String NombreBuscado = entrada.nextLine();
+        Boolean NombreEncontrado = false;
+        for (Cliente cliente : listaClientes)
+        {
+            if(cliente.getNombre().equalsIgnoreCase(NombreBuscado))
+            {
+                NombreEncontrado = true;
+                System.out.println("---Cliente encontrado---");
+                System.out.println("Nombe: "+cliente.getNombre());
+                System.out.println("Cedula: "+cliente.getCedula());
+                System.out.println("Monto ahorrado: "+cliente.getDinero_Ahorrado());
+
+            }
+        }
+        if (!NombreEncontrado)
+        {
+            System.out.println("No se ha encontrado al cliente "+NombreBuscado);
+        }
+    }
+
+       
+
+    public void listar_clientes()
+    {
+        if(listaClientes.isEmpty())
+        {
+            System.out.println("La lista esta vacia")
+        }
+        else
+        {
+            System.out.println("Lista de clientes: ");
+            for(Cliente cliente1 : listaClientes)
+            {
+                System.out.println("Nombre: "+ cliente1.getNombre() + " cedula: " + cliente1.getCedula());
+            }
         }
         
     }
