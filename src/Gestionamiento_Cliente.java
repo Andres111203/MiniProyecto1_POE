@@ -127,7 +127,7 @@ public class Gestionamiento_Cliente
         if (ClienteAhorroBorrrar != null )
         {
             cliente1.setDinero_Ahorrado(0);
-            System.out.println("El dinero ahorado ha sido eliminado");
+            System.out.println("El dinero ahorrado ha sido eliminado");
         }
         else
         {
@@ -148,7 +148,7 @@ public class Gestionamiento_Cliente
             {
                 NombreEncontrado = true;
                 System.out.println("---Cliente encontrado---");
-                System.out.println("Nombe: "+cliente.getNombre());
+                System.out.println("Normbe: "+cliente.getNombre());
                 System.out.println("Cedula: "+cliente.getCedula());
                 System.out.println("Monto ahorrado: "+cliente.getDinero_Ahorrado());
 
@@ -166,7 +166,7 @@ public class Gestionamiento_Cliente
     {
         if(listaClientes.isEmpty())
         {
-            System.out.println("La lista esta vacia")
+            System.out.println("La lista esta vacia");
         }
         else
         {

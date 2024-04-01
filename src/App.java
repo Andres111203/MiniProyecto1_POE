@@ -7,8 +7,8 @@ public class App {
     
         do
         {
-            System.out.println("--------Menu de opciones--------");
-            System.out.println("1. Ingredar Clientes");
+            System.out.println("--------Menú de opciones--------");
+            System.out.println("1. Ingresar Clientes");
             System.out.println("2. Insertar dinero ahorrado");
             System.out.println("3. Actualizar dinero ahorrado");
             System.out.println("4. Eliminar dinero ahorrado");
@@ -16,7 +16,7 @@ public class App {
             System.out.println("6. Listar todos los clientes");
             System.out.println("0. Salir del programa");
 
-            System.out.println("\nSeleccione una oppcion: ");
+            System.out.println("\nSeleccione una opción: ");
             opc = scanner.nextInt();
 
             switch(opc)
@@ -37,6 +37,7 @@ public class App {
                     break;
 
                 case 6: gest_Cliente.listar_clientes();
+                    break;
                     
             }
         }
