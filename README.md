@@ -16,3 +16,13 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+## Description
+# Mini Project one
+el programa funcionara como una entidad bancaria la cual creara clientes, guardara ahorros, actualizara y borrara ahorros, entre otras funciones.\
+
+# Authors
+Los integrantes del grupo son:\
+Juan Esteban Franco López - 202259475\
+Alejandro Garzón Mayorga - 2266088\
+Andres Narváez - 
